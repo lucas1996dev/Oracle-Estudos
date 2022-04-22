@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuada/ Laço de repetição/ FOR</title>
+</head>
+<body>
+    <script>
+            function pulaLinha() {    //Cria uma função
+            document.write("<br>");    ///cria espaço - pula linha
+            document.write("<br>");
+        }
+        
+        function mostra(frase) {
+            document.write(frase);  
+            pulaLinha();
+        }
+        // let mult = 1 
+       
+        //while ( mult <= 10){
+           // mostra(7 * mult);
+            // mult++
+        //}
+        //mostra("FIM")
+
+        //FOR
+
+      for (i = 1; i <= 10; i++){   /// for 3 partes : contador, condição e incremento
+          mostra(7 * i );
+
+      }  
+      mostra("Fim!!!")
+
+
+
+    </script>
+</body>
+</html>

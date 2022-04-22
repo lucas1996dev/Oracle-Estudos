@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botões e campos texto</title>
+</head>
+<body>
+    <h1> Estudando lógica, html e css</h1>
+    <p> Lógica é uma ciência que estuda a sequência dos pensamentos e do raciocínio. Html é uma linguaguem de marcação, não de programação
+        css é um mecanismo o que dá estilo a uma página web. Html é como um esqueleto, css é a pele.
+    </p>
+    <input>
+   <button> escreva aqui </button>
+    </input>
+    
+    <script>
+     //////ARRAYS
+        var segredos = [5,7,10,2,3];
+
+        var input = document.querySelector("input");
+            input.focus();
+
+        function verifica() {
+
+        var achou = false; //booleano
+
+        for(var posicao = 0; posicao < segredos.length; posicao++) {  //length-- metodo de percorre e diz qual o tamanho do array
+
+            if(input.value == segredos[posicao]) {
+
+                alert("Você ACERTOU!");
+                achou = true;
+                break;  ///acabar um loop
+            }
+        }
+
+        if(achou == false) {
+            alert("Você ERROU!");
+        }
+
+        input.value = "";
+        input.focus();
+
+        }
+
+        var button = document.querySelector("button");
+
+        button.onclick = verifica;
+
+
+   
+    </script>
+</body>
+</html>

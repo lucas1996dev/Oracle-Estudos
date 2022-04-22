@@ -1,0 +1,38 @@
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Adivinhação</title>
+        </head>
+        <body>
+            <script>
+                function pulaLinha() {    //Cria uma função
+                document.write("<br>");    ///cria espaço - pula linha
+                document.write("<br>");
+            }
+            
+            function mostra(frase) {
+                document.write(frase);  
+                pulaLinha();
+            }
+            let numeroPensado = Math.round(Math.random()* 10); /// Math round(arrendonda pra o int + proximo) - math random (gera um numero aleatorio)
+             let tentativas = 1;
+            while (tentativas <= 3){
+                
+            var chute = parseInt(prompt("Digite o chute!"));  
+            if (chute == numeroPensado){
+                mostra("Você acertou!!!")
+                break;       ///comando no qual para o loop
+                
+            }
+            else {
+                mostra("Você errou, era outro número!!");
+            }
+            tentativas++;
+            }
+        
+            </script>
+        </body>
+        </html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botões e campos texto</title>
+</head>
+<body>
+    <h1> Estudando lógica, html e css</h1>
+    <p> Lógica é uma ciência que estuda a sequência dos pensamentos e do raciocínio. Html é uma linguaguem de marcação, não de programação
+        css é um mecanismo o que dá estilo a uma página web. Html é como um esqueleto, css é a pele.
+    </p>
+    <input>
+   <button> escreva aqui </button>
+    </input>
+    
+    <script>
+     
+        let segredo = 1;
+        let input = document.querySelector("input"); // Criando uma variável que recebe o input inscrito no html. O que ta dentro do parentese é a função selecionada
+        input.focus();
+        function verifica(){
+        if (input.value == segredo){  ///input.value pega o valor contido dentro do input
+            alert("Você está aprendendo")
+            } else {
+                alert("Você errou")
+            }
+            input.value = "";
+            input.focus(); /// foco na funcionalidade selecionada- Nesse caso input
+        }
+          let button_game = document.querySelector("button"); // Atribui a variavel button_game o conteudo da tag button
+          button_game.onclick = verifica; // Se colocar verifica(), irá pedir um parametro, e não chamar a função/// onclick é uma função js que requer uma interação com usuário
+          
+   
+    </script>
+</body>
+</html>
