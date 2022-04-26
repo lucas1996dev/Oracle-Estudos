@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desenhos com lógica</title>
+</head>
+<body>
+  <canvas width="600" height="400"></canvas> <!-- Permite desenhar-->
+  
+  <script>
+        let tela = document.querySelector("canvas"); /**  Selecionar o canvas*/
+        let pincel = tela.getContext("2d");  /* Habilitar o pincel */
+        pincel.fillStyle = "orange";  /** cor que será usada no pincel */
+        pincel.fillRect(0, 0,600,400); /**  cordenadas onde o pincel vai pintar*/
+        
+    </script>
+</body>
+</html>

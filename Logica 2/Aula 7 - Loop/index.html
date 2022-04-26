@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desenhos com lógica</title>
+</head>
+<body>
+  <canvas width="600" height="400"></canvas> <!-- Permite desenhar-->
+  
+  <script>
+        
+    // Construindo um quadrado
+      function quadradoDesenha (x, y, cor){
+        let tela = document.querySelector("canvas"); /**  Selecionar o canvas*/
+        let pincel = tela.getContext("2d");  /* Habilitar o pincel */
+        pincel.fillStyle = cor;
+        pincel.fillRect(x,y,50,50);  //Posição x e y 
+        pincel.fillStroke = "black"; //Criar uma borda
+        pincel.strokeRect(x,y,50,50);
+
+      }
+       
+        for (let x = 0; x < 600;  x = x + 50){
+            quadradoDesenha(x,0, 'green');
+            }
+       </script>
+</body>
+</html>
